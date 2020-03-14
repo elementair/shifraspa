@@ -1,0 +1,252 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+
+
+/*****Font*****/
+@font-face{
+    font-family: SourceSansPro-Regular;
+    src: url(../../Fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face{
+    font-family: SourceSansPro-Bold;
+    src: url(../../Fonts/SourceSansPro-Bold.otf);
+}
+
+@font-face{
+    font-family: SourceSansPro-Light;
+    src: url(../../Fonts/SourceSansPro-Light.otf);
+}
+
+@font-face{
+    font-family: SourceSansPro-Semibold;
+    src: url(../../Fonts/SourceSansPro-Semibold.otf);
+}
+
+
+@font-face{
+    font-family: SourceSansPro-Black;
+    src: url(../../Fonts/SourceSansPro-Black.otf);
+}
+
+
+
+
+/*****Estilo Menú*****/
+#menu{
+    background-color: #6ed11c;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: -100%;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    z-index: 99;
+    opacity: .9;
+}
+
+#menuHeader img{
+    width: 45px;
+    height: 45px;
+}
+
+
+#listaMenu{
+    list-style: none;
+    color: white;
+}
+
+#listaMenu li{
+    line-height: 1;
+}
+
+#listaMenu a{
+    color: white;
+    text-decoration: none;
+    font-size: 48pt;
+    font-family: SourceSansPro-Black;
+}
+
+#listaMenu hr{
+    border-color: white;
+    background-color: white;
+}
+
+#infoMenu{
+    color: white;
+}
+
+#telefonoMenu, #CopyrightMenu{
+    font-family: SourceSansPro-Semibold;
+    font-size: 8.31px;
+    line-height: 1;
+    padding-left: 77.5px;
+}
+
+#telefonoMenu{
+    font-size: 10.5px;
+}
+
+
+video#bgvid {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+#logoMain{
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+.enlaceMenuBlanco{
+    font-family: SourceSansPro-Regular;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+.enlaceMenuVerde{
+    font-family: SourceSansPro-Regular;
+    font-size: 22px;
+    text-decoration: none;
+    color: #9bd800;
+}
+
+.enlaceMenuBlanco:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.enlaceMenuVerde:hover{
+    text-decoration: none;
+    color: #9bd800;
+}
+
+.btnOpenMenuText{
+    padding-right: 12px;
+    vertical-align: center;
+    margin-top: auto;
+}
+
+.btnOpenMenu{
+    /*padding-right: 20px;
+    padding-top: 20px;*/
+    cursor: pointer;
+}
+
+#encabezadoMain{
+    font-family: SourceSansPro-Semibold;
+    font-size: 40px;
+    color: #e3d673;
+    margin: 0;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+}
+
+.flechaInicio{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    bottom: 25px;
+    cursor: pointer;
+}
+.redes-sociales{
+    margin-left: 60%;
+    padding: 0px;
+
+}
+.menuBody{
+    margin-left: 60%;
+}
+
+
+.navbar{
+  background-color: #fff;
+}
+.icon-bar{
+  background-color: rgb(104, 145, 162);
+}
+
+.contenido{
+  padding-top: 50px;
+}
+h3{
+  text-align: center;
+}
+
+#fondo-negro-opacado{
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background-color: #0f0f0f;
+    opacity: .4;
+}
+
+#btnCloseMenu{
+    cursor: pointer;
+}
+
+#fondo{
+   display: none;
+}
+
+
+
+
+@media (max-width: 800px) {
+    #menuBody{
+        margin-top: 10%;
+        padding: 0px;
+    }
+    .menuBody{
+        width: 90%;
+        padding: 0px;
+        margin-left: 5%;
+    }
+    #listaMenu{
+        padding: 0px;
+        width: 100%;
+    }
+    #listaMenu li a{
+        font-size: 20pt;
+    }
+    .redes-sociales{
+        width: 90%;
+        margin: 0px;
+        margin-left: 5%;
+    }
+    #logoMain{
+        width: 50% ;
+    }
+    #fondo{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        z-index: -10;
+        position: absolute;
+    }
+
+}
+@media (max-width: 800px) and  (orientation: landscape){
+    #listaMenu li a{
+        font-size: 15pt;
+    }
+}

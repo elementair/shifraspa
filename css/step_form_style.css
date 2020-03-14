@@ -1,0 +1,152 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.otf);
+}
+
+
+/* Style the form */
+
+.tab h3 span {
+    border-radius: 80%;
+    border: 3px solid #4D0000;
+    padding: 10px 17px;
+    display: inline-block;
+    width: 50px;
+    margin-right: 10px;
+}
+
+#regForm {
+    background-color: #ffffff;
+    padding: 0px 40px;
+    width: 100%;
+    min-width: 300px;
+    border-right: 1px #ddd;
+}
+
+#regForm h4 {
+    color: #400400;
+    margin-bottom: 40px;
+}
+
+#regForm input[type="radio"] {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    resize: none;
+}
+
+.opciones li {
+    border: 0px solid #ddd6;
+    background-color: #ddd6;
+    border-radius: 4px 4px 0 0;
+}
+
+
+/* Style the input fields */
+
+#regForm input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Montserrat-Regular;
+    border: 1px solid #aaaaaa;
+}
+
+#regForm select {
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: Montserrat-Regular;
+    border: 1px solid #aaaaaa;
+}
+
+
+/* Mark input boxes that gets an error on validation: */
+
+#regForm input.invalid {
+    background-color: #ffdddd;
+}
+
+.highlight {
+    background-color: #333;
+    cursor: pointer;
+}
+
+
+/* Hide all steps by default: */
+
+.tab {
+    display: none;
+}
+
+
+/* Make circles that indicate the steps of the form: */
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+
+/* Mark the active step: */
+
+.step.active {
+    opacity: 1;
+}
+
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish {
+    background-color: #400400;
+}
+
+.contenido_factura {
+    margin: 10px 0px;
+    /* background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;*/
+    border-radius: 4px;
+    height: auto;
+    padding: 20px 0px;
+}
+
+@media only screen and (max-width: 480px) {
+    #regForm {
+        background-color: #ffffff;
+        /*margin: 10px 50px;*/
+        padding: 0px;
+        width: 100%;
+        min-width: 298px;
+        border-right: 0px #ddd6;
+    }
+    .modal-lg {
+        width: 100% !important;
+    }
+    .modal-lg .modal-content {
+        min-height: 100vh;
+    }
+    .modal-lg .tab {
+        padding: 4px;
+    }
+    .modal-lg h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .autopoint {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

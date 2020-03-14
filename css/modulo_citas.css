@@ -1,0 +1,31 @@
+
+.btn_paso1{
+  	background-color: rgb(162,131,86,1); 
+  	border-radius: 30px; 
+  	margin-bottom: 20px;
+  	color: #fff;
+  	display: inline-block;
+  	cursor: pointer;
+  	text-decoration-style: none;
+  	padding: 10px;
+  	min-width: 300px;
+  	box-shadow: 1px 2px 2px 2px #00000020;
+}
+
+.btn_paso1 small{
+	color: #ccc;
+}
+
+.btn_paso1:hover{
+ 	background-color: #400400;
+ 	text-decoration: none;
+ 	color: #fff;
+ 	animation-delay: 21s;
+  	box-shadow: 1px 1px 1px 1px #00000020;
+}
+
+.anuncio{
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "paypal/rest-api-sdk-php": "*",
+        "facebook/php-sdk-v4": "^5.6"
+    }
+}
